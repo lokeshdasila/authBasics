@@ -1,0 +1,28 @@
+{
+  "name": "authbasics",
+  "version": "1.0.0",
+  "description": "using passport",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokeshdasila/authBasics.git"
+  },
+  "author": "lokesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokeshdasila/authBasics/issues"
+  },
+  "homepage": "https://github.com/lokeshdasila/authBasics#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.1.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.0"
+  }
+}
