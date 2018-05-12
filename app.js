@@ -1,6 +1,9 @@
-var app = (require('express'))();
-var mongu = require('mongoose');
-
+var  app            = (require('express'))(),
+     mongu          = require('mongoose'),
+     passpo         = require("passport"),
+     localPass      = require("passport-local"),
+     bodyParser     = require("body-parser"),
+     passMong       = require("passport-local-mongoose");
 var port = process.env.PORT || 3000;
 var ip = process.env.IP || "127.0.0.1";
 
@@ -18,5 +21,5 @@ app.get("/seCret",(req,res)=>{
 })
 
 app.listen(port,ip, ()=>{
-    console.log("Server started on ip"+ip+" port "+port);
+    console.log("Server started on ip "+ip+" port "+port);
 })
